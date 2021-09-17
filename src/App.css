@@ -1,38 +1,106 @@
-.App {
+.container {
+  font-family: "Nunito", sans-serif;
+  padding: 150px 300px;
   text-align: center;
+  color: #042922;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch-container {
+  background-color: #00836a;
+  padding: 20px 30px 40px;
+  border-radius: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.time {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.time > div {
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.time > span {
+  display: block;
+  margin: auto 0;
+  color: #fff;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  margin: 15px 10px;
+  width: 150px;
+  border-radius: 25px;
+  border: 5px solid #fff;
+}
+
+button:hover {
+  transition: background 0.5s ease;
+  color: #042922;
+  background-color: #fff;
+}
+
+.start-btn {
+  background-color: #9FE2BF;
+}
+
+.start-btn:hover {
+  border-color: #9FE2BF;
+}
+
+.stop-btn {
+  background-color: #AA2020;
+  color: #fff;
+}
+
+.stop-btn:hover {
+  border-color: #AA2020;
+}
+
+.wait-btn {
+  background-color: #FEE69E;
+}
+
+.wait-btn:hover {
+  border-color: #FEE69E;
+}
+
+.reset-btn {
+  background-color: #F9A88A;
+}
+
+.reset-btn:hover {
+  border-color: #F9A88A;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #035646;
+  color: #69a096;
+  border: none;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    padding: 150px 100px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 150px 20px;
   }
 }
